@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="Financier"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:layout_marginTop="100dp"/>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="1057dp"
+        android:layout_height="826dp"
+        android:layout_marginTop="200dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="446dp"
+            android:foregroundGravity="center">
+
+            <LinearLayout
+                android:id="@+id/fragment_home"
+                android:layout_width="460dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/send_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/bar">
+
+        <EditText
+            android:id="@+id/send_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_border"
+            android:hint="Enter your letter"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:backgroundTint="@color/blue"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/home_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/search"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageButton
+            android:id="@+id/plus_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/add"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/profile_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/profile"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

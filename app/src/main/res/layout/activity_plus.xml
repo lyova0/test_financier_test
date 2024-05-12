@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".plus"
+    android:background="@color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New post"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/financier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="Financier"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/entrepreneur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="Innovator"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/project_name_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Project name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="85dp"/>
+
+            <EditText
+                android:id="@+id/project_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:background="@drawable/blue_border"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/blue"
+                android:hint="project name"
+                android:layout_marginTop="108dp"/>
+
+            <TextView
+                android:id="@+id/amount_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Project amount to be collected"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="160dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="183dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/project_amount"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:background="@drawable/blue_border"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/blue"
+                    android:hint="Project amount to be collected"
+                    android:textSize="15dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/gray"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full idea"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="320dp"/>
+
+            <EditText
+                android:id="@+id/full_idea"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="120dp"
+                android:background="@drawable/blue_border"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/blue"
+                android:hint="Your username"
+                android:layout_marginTop="343dp"/>
+
+            <TextView
+                android:id="@+id/project_type_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type your project"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="470dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="500dp">
+
+                <Button
+                    android:id="@+id/business_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="business"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/tourism_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="tourism"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:id="@+id/education_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="Education"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="550dp">
+
+                <Button
+                    android:id="@+id/solar_energy_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="Solar energy"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/agriculture_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="Agriculture"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:id="@+id/ecology_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="Ecology"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="600dp">
+
+                <Button
+                    android:id="@+id/my_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="My Type"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/my_type_ed"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_border"
+                    android:hint="write your type"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/blue"
+                    android:padding="10dp"/>
+
+                <Button
+                    android:id="@+id/my_type_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="Ok"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write your number"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="650dp"/>
+
+            <EditText
+                android:id="@+id/my_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your number"
+                android:background="@drawable/blue_border"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/blue"
+                android:padding="10dp"
+                android:layout_marginTop="675dp"/>
+
+            <Button
+                android:id="@+id/new_post_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create post"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blue"
+                android:layout_marginTop="750dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

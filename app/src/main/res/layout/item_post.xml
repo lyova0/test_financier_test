@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/project_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="460dp"
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@drawable/financier_post_green"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/project_name"
+                    android:layout_width="228dp"
+                    android:layout_height="74dp"
+                    android:text="Project name"
+                    android:textColor="@color/white"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/project_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Project type"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/project_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Project user"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/project_status_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Project status"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+            android:id="@+id/project_presentation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Project presentation"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/project_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Project amount"
+            android:textSize="25dp"
+            android:layout_marginTop="0dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/more_btn"
+                android:layout_width="281dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/light_gray"
+                android:text="Connect to user"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/save_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/d_save"/>
+
+        </LinearLayout>
+
+</LinearLayout>

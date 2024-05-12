@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "669063788718",
+    "firebase_url": "https://signup-login-firebase-92bc2-default-rtdb.firebaseio.com",
+    "project_id": "signup-login-firebase-92bc2",
+    "storage_bucket": "signup-login-firebase-92bc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669063788718:android:fb25a4b1fea98be77fd53f",
+        "android_client_info": {
+          "package_name": "com.example.financier"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ0aQIEuQAF8OuZsqUsVooYJSuLDqcudQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669063788718:android:452104eb454f97327fd53f",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ0aQIEuQAF8OuZsqUsVooYJSuLDqcudQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

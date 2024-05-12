@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".save_posts">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="710dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/oll_posts"
+            android:layout_width="400dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/home_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/search"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageButton
+            android:id="@+id/plus_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/add"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/profile_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/profile"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+</RelativeLayout>
